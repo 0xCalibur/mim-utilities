@@ -1,0 +1,504 @@
+{
+  "address": "0x40e1A05Ee380eb63760226E98e8590f15A46c405",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "decodeCookData",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "string",
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "internalType": "uint8",
+              "name": "action",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint256",
+              "name": "value",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bytes",
+              "name": "data",
+              "type": "bytes"
+            }
+          ],
+          "internalType": "struct CauldronUtils.CookAction[]",
+          "name": "cookActions",
+          "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes",
+          "name": "rawData",
+          "type": "bytes"
+        }
+      ],
+      "name": "decodeCookWithSignature",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "string",
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "internalType": "uint8",
+              "name": "action",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint256",
+              "name": "value",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bytes",
+              "name": "data",
+              "type": "bytes"
+            }
+          ],
+          "internalType": "struct CauldronUtils.CookAction[]",
+          "name": "cookActions",
+          "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "decode_addCollateral",
+      "outputs": [
+        {
+          "internalType": "int256",
+          "name": "share",
+          "type": "int256"
+        },
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "internalType": "bool",
+          "name": "skim",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "decode_bentoDeposit",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "internalType": "int256",
+          "name": "amount",
+          "type": "int256"
+        },
+        {
+          "internalType": "int256",
+          "name": "share",
+          "type": "int256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "decode_bentoSetApproval",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "masterContract",
+          "type": "address"
+        },
+        {
+          "internalType": "bool",
+          "name": "approved",
+          "type": "bool"
+        },
+        {
+          "internalType": "uint8",
+          "name": "v",
+          "type": "uint8"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "r",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "s",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "decode_bentoTransfer",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "internalType": "int256",
+          "name": "share",
+          "type": "int256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "decode_bentoTransferMultiple",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "internalType": "address[]",
+          "name": "tos",
+          "type": "address[]"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "shares",
+          "type": "uint256[]"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "decode_bentoWithdraw",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "internalType": "int256",
+          "name": "amount",
+          "type": "int256"
+        },
+        {
+          "internalType": "int256",
+          "name": "share",
+          "type": "int256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "decode_borrow",
+      "outputs": [
+        {
+          "internalType": "int256",
+          "name": "amount",
+          "type": "int256"
+        },
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "decode_call",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "callee",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes",
+          "name": "callData",
+          "type": "bytes"
+        },
+        {
+          "internalType": "bool",
+          "name": "useValue1",
+          "type": "bool"
+        },
+        {
+          "internalType": "bool",
+          "name": "useValue2",
+          "type": "bool"
+        },
+        {
+          "internalType": "uint8",
+          "name": "returnValues",
+          "type": "uint8"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "decode_getRepayPart",
+      "outputs": [
+        {
+          "internalType": "int256",
+          "name": "amount",
+          "type": "int256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "decode_getRepayShare",
+      "outputs": [
+        {
+          "internalType": "int256",
+          "name": "part",
+          "type": "int256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "decode_removeCollateral",
+      "outputs": [
+        {
+          "internalType": "int256",
+          "name": "share",
+          "type": "int256"
+        },
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "decode_repay",
+      "outputs": [
+        {
+          "internalType": "int256",
+          "name": "part",
+          "type": "int256"
+        },
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "internalType": "bool",
+          "name": "skim",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "decode_updateExchangeRate",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "mustUpdate",
+          "type": "bool"
+        },
+        {
+          "internalType": "uint256",
+          "name": "minRate",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "maxRate",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x2b04a88116afeb90c8ec0a6e785cc7b41f08ace8b3bdab5c8ff75521ee071ff2",
+  "receipt": {
+    "to": null,
+    "from": "0xfB3485c2e209A5cfBDC1447674256578f1A80eE3",
+    "contractAddress": "0x40e1A05Ee380eb63760226E98e8590f15A46c405",
+    "transactionIndex": 180,
+    "gasUsed": "977526",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0xaea67e32f2d606f32302cfc6938e0045c588f6d398f11cef0c99c6dfed4151bf",
+    "transactionHash": "0x2b04a88116afeb90c8ec0a6e785cc7b41f08ace8b3bdab5c8ff75521ee071ff2",
+    "logs": [],
+    "blockNumber": 14796045,
+    "cumulativeGasUsed": "17797887",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "solcInputHash": "003e847bf7d0af91e61868886078074e",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.10+commit.fc410830\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"decodeCookData\",\"outputs\":[{\"components\":[{\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"},{\"internalType\":\"uint8\",\"name\":\"action\",\"type\":\"uint8\"},{\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"internalType\":\"struct CauldronUtils.CookAction[]\",\"name\":\"cookActions\",\"type\":\"tuple[]\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes\",\"name\":\"rawData\",\"type\":\"bytes\"}],\"name\":\"decodeCookWithSignature\",\"outputs\":[{\"components\":[{\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"},{\"internalType\":\"uint8\",\"name\":\"action\",\"type\":\"uint8\"},{\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"internalType\":\"struct CauldronUtils.CookAction[]\",\"name\":\"cookActions\",\"type\":\"tuple[]\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"decode_addCollateral\",\"outputs\":[{\"internalType\":\"int256\",\"name\":\"share\",\"type\":\"int256\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"bool\",\"name\":\"skim\",\"type\":\"bool\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"decode_bentoDeposit\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"int256\",\"name\":\"amount\",\"type\":\"int256\"},{\"internalType\":\"int256\",\"name\":\"share\",\"type\":\"int256\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"decode_bentoSetApproval\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"user\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"masterContract\",\"type\":\"address\"},{\"internalType\":\"bool\",\"name\":\"approved\",\"type\":\"bool\"},{\"internalType\":\"uint8\",\"name\":\"v\",\"type\":\"uint8\"},{\"internalType\":\"bytes32\",\"name\":\"r\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"s\",\"type\":\"bytes32\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"decode_bentoTransfer\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"int256\",\"name\":\"share\",\"type\":\"int256\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"decode_bentoTransferMultiple\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"},{\"internalType\":\"address[]\",\"name\":\"tos\",\"type\":\"address[]\"},{\"internalType\":\"uint256[]\",\"name\":\"shares\",\"type\":\"uint256[]\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"decode_bentoWithdraw\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"int256\",\"name\":\"amount\",\"type\":\"int256\"},{\"internalType\":\"int256\",\"name\":\"share\",\"type\":\"int256\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"decode_borrow\",\"outputs\":[{\"internalType\":\"int256\",\"name\":\"amount\",\"type\":\"int256\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"decode_call\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"callee\",\"type\":\"address\"},{\"internalType\":\"bytes\",\"name\":\"callData\",\"type\":\"bytes\"},{\"internalType\":\"bool\",\"name\":\"useValue1\",\"type\":\"bool\"},{\"internalType\":\"bool\",\"name\":\"useValue2\",\"type\":\"bool\"},{\"internalType\":\"uint8\",\"name\":\"returnValues\",\"type\":\"uint8\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"decode_getRepayPart\",\"outputs\":[{\"internalType\":\"int256\",\"name\":\"amount\",\"type\":\"int256\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"decode_getRepayShare\",\"outputs\":[{\"internalType\":\"int256\",\"name\":\"part\",\"type\":\"int256\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"decode_removeCollateral\",\"outputs\":[{\"internalType\":\"int256\",\"name\":\"share\",\"type\":\"int256\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"decode_repay\",\"outputs\":[{\"internalType\":\"int256\",\"name\":\"part\",\"type\":\"int256\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"bool\",\"name\":\"skim\",\"type\":\"bool\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"decode_updateExchangeRate\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"mustUpdate\",\"type\":\"bool\"},{\"internalType\":\"uint256\",\"name\":\"minRate\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"maxRate\",\"type\":\"uint256\"}],\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/CauldronUtils.sol\":\"CauldronUtils\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/CauldronUtils.sol\":{\"content\":\"// SPDX-License-Identifier: UNLICENSED\\n// solhint-disable func-name-mixedcase\\npragma solidity ^0.8.10;\\n\\ncontract CauldronUtils {\\n    uint8 internal constant ACTION_REPAY = 2;\\n    uint8 internal constant ACTION_REMOVE_COLLATERAL = 4;\\n    uint8 internal constant ACTION_BORROW = 5;\\n    uint8 internal constant ACTION_GET_REPAY_SHARE = 6;\\n    uint8 internal constant ACTION_GET_REPAY_PART = 7;\\n    uint8 internal constant ACTION_ACCRUE = 8;\\n    uint8 internal constant ACTION_ADD_COLLATERAL = 10;\\n    uint8 internal constant ACTION_UPDATE_EXCHANGE_RATE = 11;\\n    uint8 internal constant ACTION_BENTO_DEPOSIT = 20;\\n    uint8 internal constant ACTION_BENTO_WITHDRAW = 21;\\n    uint8 internal constant ACTION_BENTO_TRANSFER = 22;\\n    uint8 internal constant ACTION_BENTO_TRANSFER_MULTIPLE = 23;\\n    uint8 internal constant ACTION_BENTO_SETAPPROVAL = 24;\\n    uint8 internal constant ACTION_CALL = 30;\\n\\n    struct ActionAddRepayRemoveBorrow {\\n        bool assigned;\\n        int256 share;\\n        address to;\\n        bool skim;\\n    }\\n\\n    struct ActionUpdateExchangeRate {\\n        bool assigned;\\n        bool mustUpdate;\\n        uint256 minRate;\\n        uint256 maxRate;\\n    }\\n\\n    struct CookAction {\\n        string name;\\n        uint8 action;\\n        uint256 value;\\n        bytes data;\\n    }\\n\\n    function decodeCookWithSignature(bytes calldata rawData) public pure returns (CookAction[] memory cookActions) {\\n        return decodeCookData(rawData[4:]);\\n    }\\n\\n    function decodeCookData(bytes calldata data) public pure returns (CookAction[] memory cookActions) {\\n        (uint8[] memory actions, uint256[] memory values, bytes[] memory datas) = abi.decode(data, (uint8[], uint256[], bytes[]));\\n\\n        cookActions = new CookAction[](actions.length);\\n\\n        for (uint256 i = 0; i < actions.length; i++) {\\n            uint8 action = actions[i];\\n            string memory name;\\n\\n            if (action == ACTION_ADD_COLLATERAL) {\\n                name = \\\"addCollateral\\\";\\n            } else if (action == ACTION_REPAY) {\\n                name = \\\"repay\\\";\\n            } else if (action == ACTION_REMOVE_COLLATERAL) {\\n                name = \\\"removeCollateral\\\";\\n            } else if (action == ACTION_BORROW) {\\n                name = \\\"borrow\\\";\\n            } else if (action == ACTION_UPDATE_EXCHANGE_RATE) {\\n                name = \\\"updateExchangeRate\\\";\\n            } else if (action == ACTION_BENTO_SETAPPROVAL) {\\n                name = \\\"bentoSetApproval\\\";\\n            } else if (action == ACTION_BENTO_DEPOSIT) {\\n                name = \\\"bentoDeposit\\\";\\n            } else if (action == ACTION_BENTO_WITHDRAW) {\\n                name = \\\"bentoWithdraw\\\";\\n            } else if (action == ACTION_BENTO_TRANSFER) {\\n                name = \\\"bentoTransfer\\\";\\n            } else if (action == ACTION_BENTO_TRANSFER_MULTIPLE) {\\n                name = \\\"bentoTransferMultiple\\\";\\n            } else if (action == ACTION_CALL) {\\n                name = \\\"call\\\";\\n            } else if (action == ACTION_GET_REPAY_SHARE) {\\n                name = \\\"getRepayShare\\\";\\n            } else if (action == ACTION_GET_REPAY_PART) {\\n                name = \\\"getRepayPart\\\";\\n            }\\n\\n            cookActions[i] = CookAction(name, action, values[i], datas[i]);\\n        }\\n    }\\n\\n    function decode_addCollateral(bytes calldata data)\\n        public\\n        pure\\n        returns (\\n            int256 share,\\n            address to,\\n            bool skim\\n        )\\n    {\\n        return abi.decode(data, (int256, address, bool));\\n    }\\n\\n    function decode_repay(bytes calldata data)\\n        public\\n        pure\\n        returns (\\n            int256 part,\\n            address to,\\n            bool skim\\n        )\\n    {\\n        return abi.decode(data, (int256, address, bool));\\n    }\\n\\n    function decode_removeCollateral(bytes calldata data) public pure returns (int256 share, address to) {\\n        return abi.decode(data, (int256, address));\\n    }\\n\\n    function decode_borrow(bytes calldata data) public pure returns (int256 amount, address to) {\\n        return abi.decode(data, (int256, address));\\n    }\\n\\n    function decode_updateExchangeRate(bytes calldata data)\\n        public\\n        pure\\n        returns (\\n            bool mustUpdate,\\n            uint256 minRate,\\n            uint256 maxRate\\n        )\\n    {\\n        return abi.decode(data, (bool, uint256, uint256));\\n    }\\n\\n    function decode_bentoSetApproval(bytes calldata data)\\n        public\\n        pure\\n        returns (\\n            address user,\\n            address masterContract,\\n            bool approved,\\n            uint8 v,\\n            bytes32 r,\\n            bytes32 s\\n        )\\n    {\\n        return abi.decode(data, (address, address, bool, uint8, bytes32, bytes32));\\n    }\\n\\n    function decode_bentoDeposit(bytes calldata data)\\n        public\\n        pure\\n        returns (\\n            address token,\\n            address to,\\n            int256 amount,\\n            int256 share\\n        )\\n    {\\n        return abi.decode(data, (address, address, int256, int256));\\n    }\\n\\n    function decode_bentoWithdraw(bytes calldata data)\\n        public\\n        pure\\n        returns (\\n            address token,\\n            address to,\\n            int256 amount,\\n            int256 share\\n        )\\n    {\\n        return abi.decode(data, (address, address, int256, int256));\\n    }\\n\\n    function decode_bentoTransfer(bytes calldata data)\\n        public\\n        pure\\n        returns (\\n            address token,\\n            address to,\\n            int256 share\\n        )\\n    {\\n        return abi.decode(data, (address, address, int256));\\n    }\\n\\n    function decode_bentoTransferMultiple(bytes calldata data)\\n        public\\n        pure\\n        returns (\\n            address token,\\n            address[] memory tos,\\n            uint256[] memory shares\\n        )\\n    {\\n        return abi.decode(data, (address, address[], uint256[]));\\n    }\\n\\n    function decode_call(bytes calldata data)\\n        public\\n        pure\\n        returns (\\n            address callee,\\n            bytes memory callData,\\n            bool useValue1,\\n            bool useValue2,\\n            uint8 returnValues\\n        )\\n    {\\n        return abi.decode(data, (address, bytes, bool, bool, uint8));\\n    }\\n\\n    function decode_getRepayShare(bytes calldata data) public pure returns (int256 part) {\\n        return abi.decode(data, (int256));\\n    }\\n\\n    function decode_getRepayPart(bytes calldata data) public pure returns (int256 amount) {\\n        return abi.decode(data, (int256));\\n    }\\n}\\n\",\"keccak256\":\"0xe05703d4dbd55fbbca5e45fd1d80d0ddb75b270cab065b7dfe9dfe281908c74a\",\"license\":\"UNLICENSED\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506110b8806100206000396000f3fe608060405234801561001057600080fd5b50600436106100f55760003560e01c806365b4cabd11610097578063b54b7ad011610066578063b54b7ad014610263578063ec8e8906146102a1578063ece15efd1461012f578063f5e317b2146102da57600080fd5b806365b4cabd146102505780637fa335db146101fc5780638b72068914610187578063930d1f041461026357600080fd5b80632a781b23116100d35780632a781b23146101875780632bedc331146101a8578063373d6a8a146101fc57806351ab3d271461022c57600080fd5b806318ab82c3146100fa5780631c3a6dca1461012f578063282e6fc514610167575b600080fd5b61010d610108366004610802565b6102fc565b6040805193151584526020840192909252908201526060015b60405180910390f35b61014261013d366004610802565b610319565b604080519384526001600160a01b039092166020840152151590820152606001610126565b61017a610175366004610802565b610329565b60405161012691906108c1565b61019a610195366004610802565b610731565b604051908152602001610126565b6101bb6101b6366004610802565b610746565b604080516001600160a01b0397881681529690951660208701529215159385019390935260ff166060840152608083019190915260a082015260c001610126565b61020f61020a366004610802565b61076e565b604080519283526001600160a01b03909116602083015201610126565b61023f61023a366004610802565b610788565b604051610126959493929190610960565b61017a61025e366004610802565b6107ae565b610276610271366004610802565b6107c0565b604080516001600160a01b039586168152949093166020850152918301526060820152608001610126565b6102b46102af366004610802565b6107e1565b604080516001600160a01b03948516815293909216602084015290820152606001610126565b6102ed6102e8366004610802565b6107f1565b604051610126939291906109a4565b6000808061030c84860186610a4d565b9250925092509250925092565b6000808061030c84860186610a98565b60606000808061033b85870187610cad565b925092509250825167ffffffffffffffff81111561035b5761035b610ad6565b6040519080825280602002602001820160405280156103ba57816020015b6103a7604051806080016040528060608152602001600060ff16815260200160008152602001606081525090565b8152602001906001900390816103795790505b50935060005b83518110156107275760008482815181106103dd576103dd610d91565b602002602001015190506060600a60ff168260ff161415610422575060408051808201909152600d81526c18591910dbdb1b185d195c985b609a1b602082015261069f565b60ff8216600214156104505750604080518082019091526005815264726570617960d81b602082015261069f565b60ff821660041415610489575060408051808201909152601081526f1c995b5bdd9950dbdb1b185d195c985b60821b602082015261069f565b60ff8216600514156104b85750604080518082019091526006815265626f72726f7760d01b602082015261069f565b60ff8216600b14156104f3575060408051808201909152601281527175706461746545786368616e67655261746560701b602082015261069f565b60ff82166018141561052c575060408051808201909152601081526f18995b9d1bd4d95d105c1c1c9bdd985b60821b602082015261069f565b60ff821660141415610561575060408051808201909152600c81526b18995b9d1bd1195c1bdcda5d60a21b602082015261069f565b60ff821660151415610597575060408051808201909152600d81526c62656e746f576974686472617760981b602082015261069f565b60ff8216601614156105cd575060408051808201909152600d81526c3132b73a37aa3930b739b332b960991b602082015261069f565b60ff82166017141561060b575060408051808201909152601581527462656e746f5472616e736665724d756c7469706c6560581b602082015261069f565b60ff8216601e1415610638575060408051808201909152600481526318d85b1b60e21b602082015261069f565b60ff82166006141561066e575060408051808201909152600d81526c6765745265706179536861726560981b602082015261069f565b60ff82166007141561069f575060408051808201909152600c81526b19d95d14995c185e54185c9d60a21b60208201525b60405180608001604052808281526020018360ff1681526020018685815181106106cb576106cb610d91565b602002602001015181526020018585815181106106ea576106ea610d91565b602002602001015181525087848151811061070757610707610d91565b60200260200101819052505050808061071f90610da7565b9150506103c0565b5050505092915050565b600061073f82840184610dd0565b9392505050565b6000808080808061075987890189610de9565b949d939c50919a509850965090945092505050565b60008061077d83850185610e53565b915091509250929050565b6000606081808061079b86880188610e83565b939b929a50909850965090945092505050565b606061073f6101758360048187610f05565b60008080806107d185870187610f2f565b9299919850965090945092505050565b6000808061030c84860186610f75565b600060608061030c84860186610fb6565b6000806020838503121561081557600080fd5b823567ffffffffffffffff8082111561082d57600080fd5b818501915085601f83011261084157600080fd5b81358181111561085057600080fd5b86602082850101111561086257600080fd5b60209290920196919550909350505050565b6000815180845260005b8181101561089a5760208185018101518683018201520161087e565b818111156108ac576000602083870101525b50601f01601f19169290920160200192915050565b60006020808301818452808551808352604092508286019150828160051b87010184880160005b8381101561095257603f1989840301855281516080815181865261090e82870182610874565b91505060ff89830151168986015287820151888601526060808301519250858203818701525061093e8183610874565b9689019694505050908601906001016108e8565b509098975050505050505050565b6001600160a01b038616815260a06020820181905260009061098490830187610874565b941515604083015250911515606083015260ff1660809091015292915050565b6001600160a01b038481168252606060208084018290528551918401829052600092868201929091906080860190855b818110156109f25785518516835294830194918301916001016109d4565b5050858103604087015286518082529082019350915080860160005b83811015610a2a57815185529382019390820190600101610a0e565b509298975050505050505050565b80358015158114610a4857600080fd5b919050565b600080600060608486031215610a6257600080fd5b610a6b84610a38565b95602085013595506040909401359392505050565b6001600160a01b0381168114610a9557600080fd5b50565b600080600060608486031215610aad57600080fd5b833592506020840135610abf81610a80565b9150610acd60408501610a38565b90509250925092565b634e487b7160e01b600052604160045260246000fd5b604051601f8201601f1916810167ffffffffffffffff81118282101715610b1557610b15610ad6565b604052919050565b600067ffffffffffffffff821115610b3757610b37610ad6565b5060051b60200190565b803560ff81168114610a4857600080fd5b600082601f830112610b6357600080fd5b81356020610b78610b7383610b1d565b610aec565b82815260059290921b84018101918181019086841115610b9757600080fd5b8286015b84811015610bb25780358352918301918301610b9b565b509695505050505050565b600082601f830112610bce57600080fd5b813567ffffffffffffffff811115610be857610be8610ad6565b610bfb601f8201601f1916602001610aec565b818152846020838601011115610c1057600080fd5b816020850160208301376000918101602001919091529392505050565b600082601f830112610c3e57600080fd5b81356020610c4e610b7383610b1d565b82815260059290921b84018101918181019086841115610c6d57600080fd5b8286015b84811015610bb257803567ffffffffffffffff811115610c915760008081fd5b610c9f8986838b0101610bbd565b845250918301918301610c71565b600080600060608486031215610cc257600080fd5b833567ffffffffffffffff80821115610cda57600080fd5b818601915086601f830112610cee57600080fd5b81356020610cfe610b7383610b1d565b82815260059290921b8401810191818101908a841115610d1d57600080fd5b948201945b83861015610d4257610d3386610b41565b82529482019490820190610d22565b97505087013592505080821115610d5857600080fd5b610d6487838801610b52565b93506040860135915080821115610d7a57600080fd5b50610d8786828701610c2d565b9150509250925092565b634e487b7160e01b600052603260045260246000fd5b6000600019821415610dc957634e487b7160e01b600052601160045260246000fd5b5060010190565b600060208284031215610de257600080fd5b5035919050565b60008060008060008060c08789031215610e0257600080fd5b8635610e0d81610a80565b95506020870135610e1d81610a80565b9450610e2b60408801610a38565b9350610e3960608801610b41565b92506080870135915060a087013590509295509295509295565b60008060408385031215610e6657600080fd5b823591506020830135610e7881610a80565b809150509250929050565b600080600080600060a08688031215610e9b57600080fd5b8535610ea681610a80565b9450602086013567ffffffffffffffff811115610ec257600080fd5b610ece88828901610bbd565b945050610edd60408701610a38565b9250610eeb60608701610a38565b9150610ef960808701610b41565b90509295509295909350565b60008085851115610f1557600080fd5b83861115610f2257600080fd5b5050820193919092039150565b60008060008060808587031215610f4557600080fd5b8435610f5081610a80565b93506020850135610f6081610a80565b93969395505050506040820135916060013590565b600080600060608486031215610f8a57600080fd5b8335610f9581610a80565b92506020840135610fa581610a80565b929592945050506040919091013590565b600080600060608486031215610fcb57600080fd5b8335610fd681610a80565b925060208481013567ffffffffffffffff80821115610ff457600080fd5b818701915087601f83011261100857600080fd5b8135611016610b7382610b1d565b81815260059190911b8301840190848101908a83111561103557600080fd5b938501935b8285101561105c57843561104d81610a80565b8252938501939085019061103a565b96505050604087013592508083111561107457600080fd5b5050610d8786828701610b5256fea26469706673582212208f61393dc9d98a561710c8c5e89b6e0b5067cace255318d5d0b046931f0628f064736f6c634300080a0033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100f55760003560e01c806365b4cabd11610097578063b54b7ad011610066578063b54b7ad014610263578063ec8e8906146102a1578063ece15efd1461012f578063f5e317b2146102da57600080fd5b806365b4cabd146102505780637fa335db146101fc5780638b72068914610187578063930d1f041461026357600080fd5b80632a781b23116100d35780632a781b23146101875780632bedc331146101a8578063373d6a8a146101fc57806351ab3d271461022c57600080fd5b806318ab82c3146100fa5780631c3a6dca1461012f578063282e6fc514610167575b600080fd5b61010d610108366004610802565b6102fc565b6040805193151584526020840192909252908201526060015b60405180910390f35b61014261013d366004610802565b610319565b604080519384526001600160a01b039092166020840152151590820152606001610126565b61017a610175366004610802565b610329565b60405161012691906108c1565b61019a610195366004610802565b610731565b604051908152602001610126565b6101bb6101b6366004610802565b610746565b604080516001600160a01b0397881681529690951660208701529215159385019390935260ff166060840152608083019190915260a082015260c001610126565b61020f61020a366004610802565b61076e565b604080519283526001600160a01b03909116602083015201610126565b61023f61023a366004610802565b610788565b604051610126959493929190610960565b61017a61025e366004610802565b6107ae565b610276610271366004610802565b6107c0565b604080516001600160a01b039586168152949093166020850152918301526060820152608001610126565b6102b46102af366004610802565b6107e1565b604080516001600160a01b03948516815293909216602084015290820152606001610126565b6102ed6102e8366004610802565b6107f1565b604051610126939291906109a4565b6000808061030c84860186610a4d565b9250925092509250925092565b6000808061030c84860186610a98565b60606000808061033b85870187610cad565b925092509250825167ffffffffffffffff81111561035b5761035b610ad6565b6040519080825280602002602001820160405280156103ba57816020015b6103a7604051806080016040528060608152602001600060ff16815260200160008152602001606081525090565b8152602001906001900390816103795790505b50935060005b83518110156107275760008482815181106103dd576103dd610d91565b602002602001015190506060600a60ff168260ff161415610422575060408051808201909152600d81526c18591910dbdb1b185d195c985b609a1b602082015261069f565b60ff8216600214156104505750604080518082019091526005815264726570617960d81b602082015261069f565b60ff821660041415610489575060408051808201909152601081526f1c995b5bdd9950dbdb1b185d195c985b60821b602082015261069f565b60ff8216600514156104b85750604080518082019091526006815265626f72726f7760d01b602082015261069f565b60ff8216600b14156104f3575060408051808201909152601281527175706461746545786368616e67655261746560701b602082015261069f565b60ff82166018141561052c575060408051808201909152601081526f18995b9d1bd4d95d105c1c1c9bdd985b60821b602082015261069f565b60ff821660141415610561575060408051808201909152600c81526b18995b9d1bd1195c1bdcda5d60a21b602082015261069f565b60ff821660151415610597575060408051808201909152600d81526c62656e746f576974686472617760981b602082015261069f565b60ff8216601614156105cd575060408051808201909152600d81526c3132b73a37aa3930b739b332b960991b602082015261069f565b60ff82166017141561060b575060408051808201909152601581527462656e746f5472616e736665724d756c7469706c6560581b602082015261069f565b60ff8216601e1415610638575060408051808201909152600481526318d85b1b60e21b602082015261069f565b60ff82166006141561066e575060408051808201909152600d81526c6765745265706179536861726560981b602082015261069f565b60ff82166007141561069f575060408051808201909152600c81526b19d95d14995c185e54185c9d60a21b60208201525b60405180608001604052808281526020018360ff1681526020018685815181106106cb576106cb610d91565b602002602001015181526020018585815181106106ea576106ea610d91565b602002602001015181525087848151811061070757610707610d91565b60200260200101819052505050808061071f90610da7565b9150506103c0565b5050505092915050565b600061073f82840184610dd0565b9392505050565b6000808080808061075987890189610de9565b949d939c50919a509850965090945092505050565b60008061077d83850185610e53565b915091509250929050565b6000606081808061079b86880188610e83565b939b929a50909850965090945092505050565b606061073f6101758360048187610f05565b60008080806107d185870187610f2f565b9299919850965090945092505050565b6000808061030c84860186610f75565b600060608061030c84860186610fb6565b6000806020838503121561081557600080fd5b823567ffffffffffffffff8082111561082d57600080fd5b818501915085601f83011261084157600080fd5b81358181111561085057600080fd5b86602082850101111561086257600080fd5b60209290920196919550909350505050565b6000815180845260005b8181101561089a5760208185018101518683018201520161087e565b818111156108ac576000602083870101525b50601f01601f19169290920160200192915050565b60006020808301818452808551808352604092508286019150828160051b87010184880160005b8381101561095257603f1989840301855281516080815181865261090e82870182610874565b91505060ff89830151168986015287820151888601526060808301519250858203818701525061093e8183610874565b9689019694505050908601906001016108e8565b509098975050505050505050565b6001600160a01b038616815260a06020820181905260009061098490830187610874565b941515604083015250911515606083015260ff1660809091015292915050565b6001600160a01b038481168252606060208084018290528551918401829052600092868201929091906080860190855b818110156109f25785518516835294830194918301916001016109d4565b5050858103604087015286518082529082019350915080860160005b83811015610a2a57815185529382019390820190600101610a0e565b509298975050505050505050565b80358015158114610a4857600080fd5b919050565b600080600060608486031215610a6257600080fd5b610a6b84610a38565b95602085013595506040909401359392505050565b6001600160a01b0381168114610a9557600080fd5b50565b600080600060608486031215610aad57600080fd5b833592506020840135610abf81610a80565b9150610acd60408501610a38565b90509250925092565b634e487b7160e01b600052604160045260246000fd5b604051601f8201601f1916810167ffffffffffffffff81118282101715610b1557610b15610ad6565b604052919050565b600067ffffffffffffffff821115610b3757610b37610ad6565b5060051b60200190565b803560ff81168114610a4857600080fd5b600082601f830112610b6357600080fd5b81356020610b78610b7383610b1d565b610aec565b82815260059290921b84018101918181019086841115610b9757600080fd5b8286015b84811015610bb25780358352918301918301610b9b565b509695505050505050565b600082601f830112610bce57600080fd5b813567ffffffffffffffff811115610be857610be8610ad6565b610bfb601f8201601f1916602001610aec565b818152846020838601011115610c1057600080fd5b816020850160208301376000918101602001919091529392505050565b600082601f830112610c3e57600080fd5b81356020610c4e610b7383610b1d565b82815260059290921b84018101918181019086841115610c6d57600080fd5b8286015b84811015610bb257803567ffffffffffffffff811115610c915760008081fd5b610c9f8986838b0101610bbd565b845250918301918301610c71565b600080600060608486031215610cc257600080fd5b833567ffffffffffffffff80821115610cda57600080fd5b818601915086601f830112610cee57600080fd5b81356020610cfe610b7383610b1d565b82815260059290921b8401810191818101908a841115610d1d57600080fd5b948201945b83861015610d4257610d3386610b41565b82529482019490820190610d22565b97505087013592505080821115610d5857600080fd5b610d6487838801610b52565b93506040860135915080821115610d7a57600080fd5b50610d8786828701610c2d565b9150509250925092565b634e487b7160e01b600052603260045260246000fd5b6000600019821415610dc957634e487b7160e01b600052601160045260246000fd5b5060010190565b600060208284031215610de257600080fd5b5035919050565b60008060008060008060c08789031215610e0257600080fd5b8635610e0d81610a80565b95506020870135610e1d81610a80565b9450610e2b60408801610a38565b9350610e3960608801610b41565b92506080870135915060a087013590509295509295509295565b60008060408385031215610e6657600080fd5b823591506020830135610e7881610a80565b809150509250929050565b600080600080600060a08688031215610e9b57600080fd5b8535610ea681610a80565b9450602086013567ffffffffffffffff811115610ec257600080fd5b610ece88828901610bbd565b945050610edd60408701610a38565b9250610eeb60608701610a38565b9150610ef960808701610b41565b90509295509295909350565b60008085851115610f1557600080fd5b83861115610f2257600080fd5b5050820193919092039150565b60008060008060808587031215610f4557600080fd5b8435610f5081610a80565b93506020850135610f6081610a80565b93969395505050506040820135916060013590565b600080600060608486031215610f8a57600080fd5b8335610f9581610a80565b92506020840135610fa581610a80565b929592945050506040919091013590565b600080600060608486031215610fcb57600080fd5b8335610fd681610a80565b925060208481013567ffffffffffffffff80821115610ff457600080fd5b818701915087601f83011261100857600080fd5b8135611016610b7382610b1d565b81815260059190911b8301840190848101908a83111561103557600080fd5b938501935b8285101561105c57843561104d81610a80565b8252938501939085019061103a565b96505050604087013592508083111561107457600080fd5b5050610d8786828701610b5256fea26469706673582212208f61393dc9d98a561710c8c5e89b6e0b5067cace255318d5d0b046931f0628f064736f6c634300080a0033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [],
+    "types": null
+  }
+}

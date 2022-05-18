@@ -194,7 +194,7 @@ const config: HardhatUserConfig = {
   solidity: {
     compilers: [
       {
-        version: "0.8.14",
+        version: "0.8.10",
         settings: {
           optimizer: {
             enabled: true,
@@ -204,10 +204,6 @@ const config: HardhatUserConfig = {
       }
     ]
   },
-  /* tenderly: {
-    project: process.env.TENDERLY_PROJECT,
-    username: process.env.TENDERLY_USERNAME,
-  }, */
   watcher: {
     compile: {
       tasks: ["compile"],
@@ -217,6 +213,4 @@ const config: HardhatUserConfig = {
   },
 };
 
-// You need to export an object to set up your config
-// Go to https://hardhat.org/config/ to learn more
 export default config;
